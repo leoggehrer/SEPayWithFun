@@ -1,0 +1,75 @@
+﻿//@GeneratedCode
+@startuml SEPayWithFun.Logic.Entities.Payment
++class Payment #whitesmoke {
+    - String _cardNumber
+    - DateTime _executionDate
+    - DateTime _turnoverTime
+    - String _dealerName
+    - String _dealerLocation
+    - Decimal _turnover
+    - String _note
+    ---
+     + String getCardNumber()
+     + setCardNumber(String value)
+     + DateTime getExecutionDate()
+     + setExecutionDate(DateTime value)
+     + DateTime getTurnoverTime()
+     + setTurnoverTime(DateTime value)
+     + String getDealerName()
+     + setDealerName(String value)
+     + String getDealerLocation()
+     + setDealerLocation(String value)
+     + Decimal getTurnover()
+     + setTurnover(Decimal value)
+     + String getNote()
+     + setNote(String value)
+    ---
+    + {static}Boolean CheckCreditCardNumber(String number)
+    + {static}Int32 SumOfDigits(Int32 number)
+    ---
+    + String get_CardNumber()
+    + Void set_CardNumber(String value)
+    + DateTime get_ExecutionDate()
+    + Void set_ExecutionDate(DateTime value)
+    + DateTime get_TurnoverTime()
+    + Void set_TurnoverTime(DateTime value)
+    + String get_DealerName()
+    + Void set_DealerName(String value)
+    + String get_DealerLocation()
+    + Void set_DealerLocation(String value)
+    + Decimal get_Turnover()
+    + Void set_Turnover(Decimal value)
+    + String get_Note()
+    + Void set_Note(String value)
+    + Void Validate(IContext context, EntityState entityState)
+}
++abstract class VersionEntityObject #white {
+}
++abstract class EntityObject #white {
+    - Int32 _id
+    ---
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+}
++abstract class DbObject #white {
+}
+interface IValidatableEntity #lightgrey {
+    + Void Validate(IContext context, EntityState entityState)
+}
+interface IIdentifiable #lightgrey {
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+    + Void CopyProperties(IIdentifiable other)
+}
+VersionEntityObject <|-- Payment
+EntityObject <|-- VersionEntityObject
+DbObject <|-- EntityObject
+IValidatableEntity ()- Payment
+IIdentifiable ()- EntityObject
+@enduml
