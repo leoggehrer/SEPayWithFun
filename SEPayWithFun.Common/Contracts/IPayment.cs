@@ -29,7 +29,7 @@ namespace SEPayWithFun.Common.Contracts
     /// </summary>
     public partial interface IPayment : CommonContracts.IVersionable
     {
-        System.String CardNumber { get; set; }
+        System.String CardNumberWithoutSpaces { get; set; }
         System.DateTime ExecutionDate { get; set; }
         System.DateTime TurnoverTime { get; set; }
         System.String DealerName { get; set; }
@@ -47,7 +47,7 @@ namespace SEPayWithFun.Common.Contracts
             if (handled == false)
             {
                 ((CommonContracts.IVersionable)this).CopyProperties(other);
-                CardNumber = other.CardNumber;
+                CardNumberWithoutSpaces = other.CardNumberWithoutSpaces;
                 ExecutionDate = other.ExecutionDate;
                 TurnoverTime = other.TurnoverTime;
                 DealerName = other.DealerName;

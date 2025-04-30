@@ -1,5 +1,5 @@
-CardNumber;ExecutionTime;TurnoverTime;DealerName;DealerLocation;Turnover;Note
-2203474004368156;2025-04-26T16:25:00;2025-04-27T14:37:00;Speedy Cars Frankfurt;Berlin;2842.06;Verzögerung bei der Bearbeitung
+CardNumber;TurnoverTime;ExecutionTime;DealerName;DealerLocation;Turnover;Note
+2718 2818 2845 8567;2025-04-26T16:25:00;2025-04-27T14:37:00;Speedy Cars Frankfurt;Berlin;2842.06;Verzögerung bei der Bearbeitung
 9928799676080904;2025-04-22T02:06:00;2025-04-23T03:35:00;DriveNow Stuttgart;Berlin;2081.68;
 9268308360304315;2025-04-20T20:35:00;2025-04-26T02:27:00;Autozentrum König;Berlin;5491.31;Besonderer Rabatt gewährt
 1076815826441335;2025-04-20T10:27:00;2025-04-21T16:37:00;CarMax München;München;5358.36;Erfolgreicher Abschluss

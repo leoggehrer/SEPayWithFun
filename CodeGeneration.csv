@@ -8,4 +8,4 @@ General;Property;All;Generate;True
 ###############################################################
 # Project configurations                                      #
 ###############################################################
-SEPayWithFun.Logic;Property;All;Generate;True
+General;Property;Payment.CardNumber;Generate;False

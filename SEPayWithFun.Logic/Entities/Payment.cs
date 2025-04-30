@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace SEPayWithFun.Logic.Entities;
 
 /// <summary>
@@ -12,7 +14,15 @@ public partial class Payment : VersionEntityObject
     /// </summary>
     [MaxLength(16)]
     public string CardNumber { get; set; } = string.Empty;
-
+    [NotMapped]
+    public string CardNumberWithoutSpaces
+    { 
+        get => Regex.Replace(CardNumber, ".{4}", "$0 ");
+        set
+        {
+            CardNumber = new string (value?.Where(char.IsDigit).ToArray());
+        }
+    }
     /// <summary>
     /// Gets or sets the date when the payment was executed.
     /// </summary>

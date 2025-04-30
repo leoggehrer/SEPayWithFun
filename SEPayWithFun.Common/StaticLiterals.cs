@@ -131,7 +131,7 @@ namespace SEPayWithFun.Common
         /// Gets the label for the base code.
         /// </summary>
         /// <value>A string representing the label for base code.</value>
-        public static string BaseCodeLabel => "@CodeCopy";
+        public static string BaseCodeLabel => "@BaseCode";
         /// <summary>
         /// Gets a label for code copy.
         /// </summary>

@@ -361,3 +361,22 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+#SEPayWithFunStart
+/Diagrams/Entities/Payment.puml
+/SEPayWithFun.WebApi/Models/PaymentInheritance.cs
+/SEPayWithFun.WebApi/Models/PaymentEdit.cs
+/SEPayWithFun.WebApi/Models/Payment.cs
+/SEPayWithFun.WebApi/Controllers/PaymentsController.cs
+/SEPayWithFun.WebApi/Controllers/ContextAccessorGeneration.cs
+/SEPayWithFun.MVVMApp/ViewModels/PaymentViewModel.cs
+/SEPayWithFun.MVVMApp/ViewModels/PaymentsViewModel.cs
+/SEPayWithFun.MVVMApp/Models/PaymentInheritance.cs
+/SEPayWithFun.MVVMApp/Models/Payment.cs
+/SEPayWithFun.Logic/Entities/PaymentGeneration.cs
+/SEPayWithFun.Logic/DataContext/ProjectDbContextGeneration.cs
+/SEPayWithFun.Logic/DataContext/PaymentSet.cs
+/SEPayWithFun.Logic/Contracts/IPaymentSet.cs
+/SEPayWithFun.Logic/Contracts/IContextGeneration.cs
+/SEPayWithFun.Common/Contracts/IPayment.cs
+#SEPayWithFunEnd
